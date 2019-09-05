@@ -2,7 +2,7 @@ var express = require('express');
 var logger = require('morgan');
 var bodyParser =require('body-parser');
 var admin = require('firebase-admin');
-var serviceAccount=require('./quandaryapp-firebase-adminsdk-xosuw-107a32d403.json');
+var serviceAccount=require('./quandaryapp-93934da453a5.json');
 var firebaseAdmin=admin.initializeApp({
 	credential: admin.credential.cert(serviceAccount),
 	databaseURL:'https://quandaryapp.firebaseio.com'

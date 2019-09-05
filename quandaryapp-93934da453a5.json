@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "quandaryapp",
+  "private_key_id": "93934da453a5ccdad3ab2e4abe467b9cb9287038",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDHNWijr6O54pf3\nTwGDmNsCLACvllItOQKOiBwXKFMexW8yu8KRnNVbfes0cK4BfwWZdY0e4nF54SyD\njOXQhCBJnOpZt0rPOgboVWHb/rj2mqQzwCGlkHyjZLIhSvHOdj1ljp2arUJqMiMQ\nAc0hMgmsaQJGfkyQrKVeoFYH2fK5zIjvWYJfA/iINNIs431Wkzqz7ePAAdQ/s5pH\n2ziA5IF93eCaCrJSiE8ZXFgoc/U5+vcG12BWH1u4g7Cp/kEXc+miNx5K/orD4+Kx\nnJGvXqs7PF7ofoxkfkPZJze7UAv4O4YKFgiMnfxQ/+joX//nDC0XN80PtrBiJLeD\nzYgy8h63AgMBAAECggEAJsKKDxs8GI1xsxFgwompx0Tnh0KQz7LBgBkUmh7i+WBB\n8BWfWHSzAL/B1Wy9NpZP8RlxsVou6R96aUgvaQBkRd5trLIgsKxiLq96QHNR6s2Q\n+G7APTYdQi90B01NOjZAYPO8T525h+8kaldnYbeaMT0nT68AV7/31y8MPi/Wbfb5\nXmGuqv2Rek8TSPuOvTWjOUshd21KswDnNLeoulhC5tIX69s166A7og1W9Apz0n1V\nulQZ9F0DyBnK7kcN6zuFbxniffWGP7M58rLsbHSif1EjDpw+xNfXjw0mjW49+qct\nHW8yR6z/i3AUuJD3twdihGULyi36xph0G35wqy1QfQKBgQD0r6tpI2QCD0YVpqad\nfvxJIF42cwsx3koE/hxpgR7qaAbu1fRHQkHyHShNAAGbKp2sGjZ4cmJ67mmJ7J7s\nVgVecDTObjKxGpL7UqLoyJJC/AfjFxS59/zqiIL8TRUoElfUDWM1lMQFgGMFqxQk\nUiy7hYz9sSyIIMe8ZxPkxOuWmwKBgQDQa2y//caZjYJslI4guP8E84H4RggwM7UL\nfljsc1wqcSfdvbiG5Gz23M4MCKDFOixpwgVAGDJ7FO8oZQSVUxMqBlO/qMI/7KRB\ntGvrli6Mzm9eisorYQ9HVDiNVEu+8zoTw+/ubL0e0+mvevnr8Y/hmRBhlry60bSe\ncS8pEuaMFQKBgQDyrmjr1lYSVOPGBYurGY9PV/MZPfEUfMwdN4smeRIYmySFLV8i\nbezKHXEjLaZqJ1JKp5Tu0UQreNrkGPNmo8qfZ9p4A4Pzc8/jxIofJw8psJ6B9Rpx\neCw40TxY0HrzS34gq0aClhH1AukzbgKEI5yKQGMeGuN4AEsZ6YIpm8WtkQKBgQCT\nXdHIMuUw/6jfo26XXpca5h7Y8JOrmXQCy3SOw8bAT8Azfokx/+O37UpXoeYjbk2m\n/cP+nN1cv+GWe07xUoszZMPkuauXzXga6TqBmnARqYl/nLz0TS2jbr6J17ezLYG8\nJgfJWuOiH46VQGvkU6o7hqHZjt6lbc+7VCZXcYDIPQKBgQC7pcQWg1L4hA5M4kWV\nLhndwJ33vo/VPbRck6wpKWDsQpel1fNthe54e8BnHgy+2AntQXaG7qVOeRa4N9YJ\nRveLbgq4vyBMdwe/Y1B52LETz6WZQ4QNelvAWhH8Z9QRBLqj7LPaS5q33ffGscgY\n5Y4fC1x/zjZYCOyGZoPDryiFgw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "quandaryapp@appspot.gserviceaccount.com",
+  "client_id": "",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/quandaryapp%40appspot.gserviceaccount.com"
+}
