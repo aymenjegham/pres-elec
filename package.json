@@ -1,0 +1,19 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "demonstration",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "aymen jegham",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.4.0",
+    "materialize-css": "^1.0.0",
+    "morgan": "^1.9.1"
+  }
+}

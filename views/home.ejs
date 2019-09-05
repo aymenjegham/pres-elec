@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<title> Voter pour votrre president </title>
+ <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+
+<script>
+ 
+  var firebaseConfig = {
+    apiKey: "AIzaSyDPVfrCvbWjk1qHqNIbRFmIpUDL_SBFWhw",
+    authDomain: "quandaryapp.firebaseapp.com",
+    databaseURL: "https://quandaryapp.firebaseio.com",
+    projectId: "quandaryapp",
+    storageBucket: "quandaryapp.appspot.com",
+    messagingSenderId: "800173560900",
+    appId: "1:800173560900:web:b375c5941e05cfd2"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body>
+		<script src="javascript/firebaseAuth.js" ></script>
+		<script src="javascript/firebaseVoting.js" ></script>
+
+
+<nav>
+    <div class="nav-wrapper">
+      <a  class="brand-logo">
+      	<img >  Election Présidentielle 2019</img>
+
+		 <p ></p>
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      	<li><a id="google-displayName" ></a></li>     
+       <li><a id="google-email"></a></li>
+      	  <li><a id="imageid" src="" class="circle responsive-img"></a></li> 
+     
+        <li><a class="waves-effect waves-light btn"  id="sign_out" onclick="{signout()}">Sign out</a></li>
+
+        <li><a class="waves-effect waves-light btn"  id="sign_in" onclick="{signInWithGoogle()}">Sign in with gogle</a></li>
+
+       
+      </ul>
+    </div>
+  </nav>
+
+	<div class="container">
+
+		<h1 align="center">Choisissez votre président</h1>
+		
+<!--		<button class ='btn btn-primary' onclick="{addRestaurant()}">
+			Submit
+		</button> -->
+
+
+		<div class="row">
+			<% var keys = Object.keys(restaurants) %>
+			<%  keys.forEach(function (key){%>
+			
+
+				<% var allUsers %>
+				<% if (restaurants[key].votes){ %>
+					<% allUsers =Object.keys(restaurants[key].votes) %>
+					<% } else { %>
+						<% allUsers =[] %>
+
+					<% } %>
+
+
+<div class="col s6 m6 16">
+      <div class="card large transparent" >
+        <div class="card-content blue-text text-darken-2">
+          <span class="card-title"><%= restaurants[key].name %></span>
+
+          <div class="card-image">
+          <img src="images/<%= restaurants[key].name %>.jpg" width="690" height="300">
+       
+          </div>
+
+         
+          
+        </div>
+        <div class="card-action">
+        	   <p> Votes <%= allUsers.length %> </p>
+
+          <button onclick= "{upvote('<%= key %>')}"  class="btn" >Upvote <i class="material-icons">thumb_up</i></button>
+          <button onclick="{downvote('<%= key %>')}" class="btn">DownVote <i class="material-icons">thumb_down</i></button>
+        </div>
+      </div>
+    </div>
+
+
+			
+			<% })%>
+		</div>
+		
+
+	</div>
+	
+	
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
