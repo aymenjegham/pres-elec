@@ -43,6 +43,10 @@ app.get('/homecoming-queen',isAuthenticated,function(request,response){
 	response.render('homecomingQueen.ejs');
 })
 
+app.get('/about',function(request,response){
+	response.render('about.ejs');
+})
+
 app.post('/',function(request,response){
 	var cand = request.body.candidate;
 	response.render('results.ejs',{data : cand})

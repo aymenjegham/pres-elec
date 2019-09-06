@@ -35,15 +35,13 @@
 		<script src="javascript/firebaseAuth.js" ></script>
 		<script src="javascript/firebaseVoting.js" ></script>
 
+     
 
+<!--
 <nav>
     <div class="nav-wrapper">
-      <a  class="brand-logo">
-      	<img >  Election Présidentielle 2019</img>
-
-		 <p ></p>
-      </a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <a  class="brand-logo"><h5 >  Election Présidentielle 2019</h5></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
       	<li><a id="google-displayName" ></a></li>     
        <li><a id="google-email"></a></li>
       	  <li><a id="imageid" src="" class="circle responsive-img"></a></li> 
@@ -51,11 +49,46 @@
         <li><a class="waves-effect waves-light btn"  id="sign_out" onclick="{signout()}">Sign out</a></li>
 
         <li><a class="waves-effect waves-light btn"  id="sign_in" onclick="{signInWithGoogle()}">Sign in with gogle</a></li>
+    </ul>
 
-       
+    </div>
+  </nav>
+
+-->
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo"><h6 style="font-size:3vw;">  Election Présidentielle 2019</h6></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a id="google-displayName" ></a></li>     
+       <li><a id="google-email"></a></li>
+          <li><a id="imageid" src="" class="circle responsive-img"></a></li> 
+     
+        <li><a class="waves-effect waves-light btn"  id="sign_out" onclick="{signout()}">Sign out</a></li>
+
+        <li><a class="waves-effect waves-light btn"  id="sign_in" onclick="{signInWithGoogle()}">Sign in with gogle</a></li>
       </ul>
     </div>
   </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+     <li><a  id="google-displayName_nav"></a></li>
+    <li><a id="google-email_nav"></a></li>
+    <li><a class="waves-effect waves-light btn"  id="sign_out_nav" onclick="{signout()}">Sign out</a></li>
+    <li><a class="waves-effect waves-light btn"  id="sign_in_nav" onclick="{signInWithGoogle()}">Sign in with gogle</a></li>
+  </ul>
+
+    
+
+
+     <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {});
+  });
+      
+    </script>
 
 	<div class="container">
 
@@ -80,7 +113,7 @@
 					<% } %>
 
 
-<div class="col s6 m6 16">
+<div class="col s12 m6 16">
       <div class="card large transparent" >
         <div class="card-content blue-text text-darken-2">
           <span class="card-title"><%= restaurants[key].name %></span>
@@ -113,4 +146,13 @@
 	
 <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
+<footer class="page-footer">
+        
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 Copyright 
+            <a class="grey-text text-lighten-4 right" href="about">About</a>
+       
+        
+</footer>
 </html>

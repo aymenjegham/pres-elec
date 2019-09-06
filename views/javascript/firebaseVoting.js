@@ -21,7 +21,9 @@ function addRestaurant(){
 
 
 function upvote(key){
-	var database =firebase.database()
+	firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+   var database =firebase.database()
 	var user = firebase.auth().currentUser
 	var userId =user.uid 
 	var displayName = user.displayName
@@ -44,16 +46,25 @@ function upvote(key){
 				 .catch(function(error){
 				 	console.log(error)
 				 })
+  } else {
+   	M.toast({html: 'veuillez vous inscrire d abord!', classes: 'rounded'});
+  }
+});
+	
+
+	
 
 }
 
 function downvote(key){
-	var database =firebase.database()
+		firebase.auth().onAuthStateChanged(function(user) {
+
+	if (user){
+		var database =firebase.database()
 	var user = firebase.auth().currentUser
 	var userId =user.uid 
 	var displayName = user.displayName
 
-console.log(userId)
 
 	var restaurantRef =database.ref('/restaurants/')
 							   .child(key)
@@ -71,5 +82,11 @@ console.log(userId)
 				 console.log(error)
 				 })
 
+	}else{
+		M.toast({html: 'veuillez vous inscrire d abord!', classes: 'rounded'});
+	}
+	});
+
+	
 
 }
