@@ -49,6 +49,6 @@ app.post('/',function(request,response){
 });
 
 
-app.listen(3000,function(){
+app.listen((3000 || process.env.PORT),function(){
 console.log('APP running on port 3000')
 });
