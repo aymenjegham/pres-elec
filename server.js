@@ -48,7 +48,6 @@ app.post('/',function(request,response){
 	response.render('results.ejs',{data : cand})
 });
 
-//sdfsdfdfd
-app.listen((3000 || process.env.PORT),function(){
+app.listen(process.env.PORT || 3000,function(){
 console.log('APP running on port 3000')
 });
