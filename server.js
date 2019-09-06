@@ -52,6 +52,10 @@ app.post('/',function(request,response){
 	response.render('results.ejs',{data : cand})
 });
 
+app.get('*', function(req, res){
+  res.status(404).send("Nothing found,Sorry, we couldn’t find the requested page.");
+});
+
 app.listen(process.env.PORT || 3000,function(){
 console.log('APP running on port 3000')
 });
